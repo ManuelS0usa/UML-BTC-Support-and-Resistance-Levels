@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+  api:
+    build:
+      context: orderbook
+      dockerfile: Dockerfile
+    restart: on-failure
+
+  youtube:
+    build:
+      context: nlp
+      dockerfile: Dockerfile
+    restart: on-failure
